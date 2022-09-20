@@ -96,7 +96,7 @@ function chat(ctx: Context, chat: { id: string }) {
                 chat.id,
                 cache.config.language.contactMessage +
               (cache.config.show_user_ticket ?
-                cache.config.language.ticket +
+                cache.config.language.yourTicketId +
                   ' #T' +
                   ticket.id.toString().padStart(6, '0') :
                 ''),
